@@ -1,0 +1,21 @@
+
+
+import pandas as pd
+import seaborn as sns
+
+
+df=pd.read_csv("C:/5-data_prep/ethnic diversity.csv")
+sns.boxplot(df.Salaries)
+sns.boxplot(df.age)
+
+
+IQR=df.Salaries.quantile(0.75)-df.Salaries.quantile(0.25)
+IQR
+
+
+
+lower_limit=df.Salaries.quantile(0.25)-1.5*IQR
+upper_limit=df.Salaries.quantile(0.75)+1.5*IQR
+
+lower_limit
+upper_limit
