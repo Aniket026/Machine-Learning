@@ -6,7 +6,7 @@ Created on Wed Aug 14 08:23:38 2024
 """
 
 
-
+ 
 from sklearn.cluster import KMeans 
 import pandas  as pd 
 import numpy as np
